@@ -11,23 +11,25 @@
         "steps": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 3373708414,
+              "status": "passed"
             },
             "line": 5,
             "name": "I am on the Homepage",
             "match": {
-              "location": "Common.i_am_on_the_Homepage()"
+              "location": "CommonSteps.i_am_on_the_Homepage()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 655040199,
+              "status": "passed"
             },
             "line": 6,
             "name": "I log in to the platform",
             "match": {
-              "location": "Login.iLogInToThePlatform()"
+              "location": "LoginSteps.iLogInToThePlatform()"
             },
             "keyword": "When "
           }
@@ -37,30 +39,29 @@
         "before": [
           {
             "result": {
-              "duration": 566894,
-              "error_message": "java.lang.NullPointerException\r\n\tat steps.HotelManagementSteps.setup(HotelManagementSteps.java:20)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)\r\n\tat cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)\r\n\tat cucumber.runtime.Runtime.runHooks(Runtime.java:212)\r\n\tat cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)\r\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:344)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:269)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:240)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:184)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)\r\n",
-              "status": "failed"
+              "duration": 3310570619,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 201040,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 4864787,
+              "status": "passed"
             },
             "match": {
               "location": "HotelManagementSteps.setup()"
-            }
-          },
-          {
-            "result": {
-              "duration": 5008445460,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Login.setup()"
-            }
-          },
-          {
-            "result": {
-              "duration": 325406,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Common.setup()"
             }
           }
         ],
@@ -73,7 +74,8 @@
         "steps": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 338513867,
+              "status": "passed"
             },
             "line": 11,
             "name": "I enter \"Hilton Hotel\" in the hotel name field",
@@ -93,7 +95,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 119509077,
+              "status": "passed"
             },
             "line": 12,
             "name": "I enter  \"London UK\" in the address field",
@@ -113,7 +116,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 109233739,
+              "status": "passed"
             },
             "line": 13,
             "name": "I enter \"George\" in the owners field",
@@ -133,7 +137,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 176399561,
+              "status": "passed"
             },
             "line": 14,
             "name": "I enter \"07909000943\" in the phone number field",
@@ -153,7 +158,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 1172955936,
+              "status": "passed"
             },
             "line": 15,
             "name": "I enter \"test@email.com\" in the email field",
@@ -173,7 +179,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 2119355732,
+              "status": "passed"
             },
             "line": 16,
             "name": "I click create button",
@@ -184,12 +191,13 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 3273420016,
+              "status": "passed"
             },
             "line": 17,
             "name": "I log out successfully",
             "match": {
-              "location": "Login.i_log_out_successfully()"
+              "location": "LoginSteps.i_log_out_successfully()"
             },
             "keyword": "And "
           }
@@ -214,25 +222,25 @@
         "steps": [
           {
             "result": {
-              "duration": 3758146165,
+              "duration": 1121823142,
               "status": "passed"
             },
             "line": 5,
             "name": "I am on the Homepage",
             "match": {
-              "location": "Common.i_am_on_the_Homepage()"
+              "location": "CommonSteps.i_am_on_the_Homepage()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 675070470,
+              "duration": 545877096,
               "status": "passed"
             },
             "line": 6,
             "name": "I log in to the platform",
             "match": {
-              "location": "Login.iLogInToThePlatform()"
+              "location": "LoginSteps.iLogInToThePlatform()"
             },
             "keyword": "When "
           }
@@ -242,29 +250,29 @@
         "before": [
           {
             "result": {
-              "duration": 14071540,
+              "duration": 208887,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 102029,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 10186592,
               "status": "passed"
             },
             "match": {
               "location": "HotelManagementSteps.setup()"
-            }
-          },
-          {
-            "result": {
-              "duration": 110481,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Login.setup()"
-            }
-          },
-          {
-            "result": {
-              "duration": 361629,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Common.setup()"
             }
           }
         ],
@@ -277,7 +285,7 @@
         "steps": [
           {
             "result": {
-              "duration": 423150786,
+              "duration": 275988850,
               "status": "passed"
             },
             "line": 26,
@@ -298,7 +306,7 @@
           },
           {
             "result": {
-              "duration": 129347323,
+              "duration": 118293787,
               "status": "passed"
             },
             "line": 27,
@@ -319,7 +327,7 @@
           },
           {
             "result": {
-              "duration": 119166767,
+              "duration": 104291675,
               "status": "passed"
             },
             "line": 28,
@@ -340,7 +348,7 @@
           },
           {
             "result": {
-              "duration": 149128256,
+              "duration": 132034486,
               "status": "passed"
             },
             "line": 29,
@@ -361,7 +369,7 @@
           },
           {
             "result": {
-              "duration": 1179476730,
+              "duration": 1154017797,
               "status": "passed"
             },
             "line": 30,
@@ -382,7 +390,7 @@
           },
           {
             "result": {
-              "duration": 2106567705,
+              "duration": 2120429753,
               "status": "passed"
             },
             "line": 31,
@@ -394,13 +402,13 @@
           },
           {
             "result": {
-              "duration": 6022820067,
+              "duration": 3264847172,
               "status": "passed"
             },
             "line": 32,
             "name": "I log out successfully",
             "match": {
-              "location": "Login.i_log_out_successfully()"
+              "location": "LoginSteps.i_log_out_successfully()"
             },
             "keyword": "And "
           }
@@ -425,25 +433,25 @@
         "steps": [
           {
             "result": {
-              "duration": 1115677861,
+              "duration": 1127661733,
               "status": "passed"
             },
             "line": 5,
             "name": "I am on the Homepage",
             "match": {
-              "location": "Common.i_am_on_the_Homepage()"
+              "location": "CommonSteps.i_am_on_the_Homepage()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 495444017,
+              "duration": 543957865,
               "status": "passed"
             },
             "line": 6,
             "name": "I log in to the platform",
             "match": {
-              "location": "Login.iLogInToThePlatform()"
+              "location": "LoginSteps.iLogInToThePlatform()"
             },
             "keyword": "When "
           }
@@ -453,29 +461,29 @@
         "before": [
           {
             "result": {
-              "duration": 4336532,
+              "duration": 49505,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 46487,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 3860195,
               "status": "passed"
             },
             "match": {
               "location": "HotelManagementSteps.setup()"
-            }
-          },
-          {
-            "result": {
-              "duration": 110481,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Login.setup()"
-            }
-          },
-          {
-            "result": {
-              "duration": 112895,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Common.setup()"
             }
           }
         ],
@@ -488,7 +496,7 @@
         "steps": [
           {
             "result": {
-              "duration": 259610490,
+              "duration": 295323030,
               "status": "passed"
             },
             "line": 26,
@@ -509,7 +517,7 @@
           },
           {
             "result": {
-              "duration": 114049021,
+              "duration": 108463993,
               "status": "passed"
             },
             "line": 27,
@@ -530,7 +538,7 @@
           },
           {
             "result": {
-              "duration": 103142793,
+              "duration": 102654382,
               "status": "passed"
             },
             "line": 28,
@@ -551,7 +559,7 @@
           },
           {
             "result": {
-              "duration": 125529388,
+              "duration": 138692328,
               "status": "passed"
             },
             "line": 29,
@@ -572,7 +580,7 @@
           },
           {
             "result": {
-              "duration": 1152827259,
+              "duration": 1173690061,
               "status": "passed"
             },
             "line": 30,
@@ -593,7 +601,7 @@
           },
           {
             "result": {
-              "duration": 2098193484,
+              "duration": 2114184859,
               "status": "passed"
             },
             "line": 31,
@@ -605,13 +613,13 @@
           },
           {
             "result": {
-              "duration": 3243503807,
+              "duration": 3392342879,
               "status": "passed"
             },
             "line": 32,
             "name": "I log out successfully",
             "match": {
-              "location": "Login.i_log_out_successfully()"
+              "location": "LoginSteps.i_log_out_successfully()"
             },
             "keyword": "And "
           }
@@ -636,25 +644,25 @@
         "steps": [
           {
             "result": {
-              "duration": 1114640668,
+              "duration": 1141692220,
               "status": "passed"
             },
             "line": 5,
             "name": "I am on the Homepage",
             "match": {
-              "location": "Common.i_am_on_the_Homepage()"
+              "location": "CommonSteps.i_am_on_the_Homepage()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 550075979,
+              "duration": 542854866,
               "status": "passed"
             },
             "line": 6,
             "name": "I log in to the platform",
             "match": {
-              "location": "Login.iLogInToThePlatform()"
+              "location": "LoginSteps.iLogInToThePlatform()"
             },
             "keyword": "When "
           }
@@ -664,29 +672,29 @@
         "before": [
           {
             "result": {
-              "duration": 3874684,
+              "duration": 65806,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 68221,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 3963431,
               "status": "passed"
             },
             "match": {
               "location": "HotelManagementSteps.setup()"
-            }
-          },
-          {
-            "result": {
-              "duration": 106859,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Login.setup()"
-            }
-          },
-          {
-            "result": {
-              "duration": 70635,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Common.setup()"
             }
           }
         ],
@@ -699,7 +707,7 @@
         "steps": [
           {
             "result": {
-              "duration": 253751978,
+              "duration": 300285017,
               "status": "passed"
             },
             "line": 26,
@@ -720,7 +728,7 @@
           },
           {
             "result": {
-              "duration": 92512465,
+              "duration": 112398446,
               "status": "passed"
             },
             "line": 27,
@@ -741,7 +749,7 @@
           },
           {
             "result": {
-              "duration": 91546511,
+              "duration": 112168428,
               "status": "passed"
             },
             "line": 28,
@@ -762,7 +770,7 @@
           },
           {
             "result": {
-              "duration": 121738621,
+              "duration": 149881097,
               "status": "passed"
             },
             "line": 29,
@@ -783,7 +791,7 @@
           },
           {
             "result": {
-              "duration": 1157823657,
+              "duration": 1161590274,
               "status": "passed"
             },
             "line": 30,
@@ -804,7 +812,7 @@
           },
           {
             "result": {
-              "duration": 2143155036,
+              "duration": 2107902533,
               "status": "passed"
             },
             "line": 31,
@@ -816,13 +824,13 @@
           },
           {
             "result": {
-              "duration": 3271357100,
+              "duration": 3266594944,
               "status": "passed"
             },
             "line": 32,
             "name": "I log out successfully",
             "match": {
-              "location": "Login.i_log_out_successfully()"
+              "location": "LoginSteps.i_log_out_successfully()"
             },
             "keyword": "And "
           }
@@ -847,25 +855,25 @@
         "steps": [
           {
             "result": {
-              "duration": 1130765465,
+              "duration": 1117415372,
               "status": "passed"
             },
             "line": 5,
             "name": "I am on the Homepage",
             "match": {
-              "location": "Common.i_am_on_the_Homepage()"
+              "location": "CommonSteps.i_am_on_the_Homepage()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 709349170,
+              "duration": 548098187,
               "status": "passed"
             },
             "line": 6,
             "name": "I log in to the platform",
             "match": {
-              "location": "Login.iLogInToThePlatform()"
+              "location": "LoginSteps.iLogInToThePlatform()"
             },
             "keyword": "When "
           }
@@ -875,29 +883,29 @@
         "before": [
           {
             "result": {
-              "duration": 4387244,
+              "duration": 65202,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 83917,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 3683908,
               "status": "passed"
             },
             "match": {
               "location": "HotelManagementSteps.setup()"
-            }
-          },
-          {
-            "result": {
-              "duration": 95992,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Login.setup()"
-            }
-          },
-          {
-            "result": {
-              "duration": 62787,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Common.setup()"
             }
           }
         ],
@@ -910,7 +918,7 @@
         "steps": [
           {
             "result": {
-              "duration": 277938268,
+              "duration": 271412642,
               "status": "passed"
             },
             "line": 26,
@@ -931,7 +939,7 @@
           },
           {
             "result": {
-              "duration": 97871096,
+              "duration": 115695369,
               "status": "passed"
             },
             "line": 27,
@@ -952,7 +960,7 @@
           },
           {
             "result": {
-              "duration": 90937960,
+              "duration": 110852919,
               "status": "passed"
             },
             "line": 28,
@@ -973,7 +981,7 @@
           },
           {
             "result": {
-              "duration": 128356013,
+              "duration": 150128622,
               "status": "passed"
             },
             "line": 29,
@@ -994,7 +1002,7 @@
           },
           {
             "result": {
-              "duration": 1176636221,
+              "duration": 1176918159,
               "status": "passed"
             },
             "line": 30,
@@ -1015,7 +1023,7 @@
           },
           {
             "result": {
-              "duration": 2097067543,
+              "duration": 2109929830,
               "status": "passed"
             },
             "line": 31,
@@ -1027,13 +1035,13 @@
           },
           {
             "result": {
-              "duration": 3268293213,
+              "duration": 3278942860,
               "status": "passed"
             },
             "line": 32,
             "name": "I log out successfully",
             "match": {
-              "location": "Login.i_log_out_successfully()"
+              "location": "LoginSteps.i_log_out_successfully()"
             },
             "keyword": "And "
           }
@@ -1058,25 +1066,25 @@
         "steps": [
           {
             "result": {
-              "duration": 1112184125,
+              "duration": 1103872088,
               "status": "passed"
             },
             "line": 5,
             "name": "I am on the Homepage",
             "match": {
-              "location": "Common.i_am_on_the_Homepage()"
+              "location": "CommonSteps.i_am_on_the_Homepage()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 581927720,
+              "duration": 562181197,
               "status": "passed"
             },
             "line": 6,
             "name": "I log in to the platform",
             "match": {
-              "location": "Login.iLogInToThePlatform()"
+              "location": "LoginSteps.iLogInToThePlatform()"
             },
             "keyword": "When "
           }
@@ -1086,29 +1094,29 @@
         "before": [
           {
             "result": {
-              "duration": 3577050,
+              "duration": 46486,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 58561,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 3539619,
               "status": "passed"
             },
             "match": {
               "location": "HotelManagementSteps.setup()"
-            }
-          },
-          {
-            "result": {
-              "duration": 77880,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Login.setup()"
-            }
-          },
-          {
-            "result": {
-              "duration": 44072,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Common.setup()"
             }
           }
         ],
@@ -1121,9 +1129,8 @@
         "steps": [
           {
             "result": {
-              "duration": 12577650956,
-              "error_message": "java.lang.NullPointerException\r\n\tat sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy16.click(Unknown Source)\r\n\tat pages.hotelManagementPage.DeleteEntry(hotelManagementPage.java:57)\r\n\tat steps.HotelManagementSteps.clickShouldBeAbleToDeleteMultipleEntrie(HotelManagementSteps.java:66)\r\n\tat ✽.And click should be able to delete multiple entrie(feature/HotelManagement.feature:44)\r\n",
-              "status": "failed"
+              "duration": 10637569707,
+              "status": "passed"
             },
             "line": 44,
             "name": "click should be able to delete multiple entrie",

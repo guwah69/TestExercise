@@ -11,7 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.io.IOException;
 
-public class Common extends testBase{
+public class CommonSteps extends testBase{
 
 
     @Before
@@ -37,12 +37,6 @@ public class Common extends testBase{
         signinpage.click_signin();
 
     }
-
-//    @Then("^I see mobile container title message$")
-//    public void i_see_mobile_container_title_message() throws Throwable {
-//        Assert.assertEquals("AndroidContainerTest1", driver.findElement(By.className("android.widget.TextView")).getText());
-//    }
-
 
 
 }

@@ -76,7 +76,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>Module1</td>
                           <td>1</td>
-                        <td>12 Oct 2017, 14:21</td>
+                        <td>12 Oct 2017, 14:32</td>
           </tr>
         </tbody>
       </table>
@@ -123,17 +123,17 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@deleteEntries</td>
-                    <td >0</td>
-          <td  class="failed"    >1</td>
-          <td class="total">1</td>
-          <td >0</td>
-          <td      class="failed"    >1</td>
-          <td >0</td>
-          <td >0</td>
+                    <td  class="passed"    >1</td>
           <td >0</td>
           <td class="total">1</td>
-          <td class="duration" data-value="12577650956">12s 577ms</td>
-          <td class="failed">Failed</td>
+          <td      class="passed"    >1</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">1</td>
+          <td class="duration" data-value="10637569707">10s 637ms</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -161,9 +161,9 @@ $(document).ready(function() {
   </div>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">I should be able o delete existing entries</span>
   
@@ -174,7 +174,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
     
   <div class="inner-level hooks-before">
         <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
@@ -193,39 +193,39 @@ $(document).ready(function() {
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
+                          <span class="location name">CommonSteps.setup()</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">LoginSteps.setup()</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
                           <span class="location name">HotelManagementSteps.setup()</span>
                         
   <span class="lead-duration duration">003ms</span>
-
-          </div>
-
-                      
-
-          
-          
-
-        </div>
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-                          <span class="location name">Login.setup()</span>
-                        
-  <span class="lead-duration duration">000ms</span>
-
-          </div>
-
-                      
-
-          
-          
-
-        </div>
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-                          <span class="location name">Common.setup()</span>
-                        
-  <span class="lead-duration duration">000ms</span>
 
           </div>
 
@@ -241,9 +241,9 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -253,38 +253,18 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
           <div class="step">
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">click should be able to delete multiple entrie</span>
   
-  <span class="lead-duration duration">12s 577ms</span>
+  <span class="lead-duration duration">10s 637ms</span>
 
   </div>
 
         
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
-          <a>Error message</a>
-      </div>
-      <div id="msg-4" class="collapse collapsable-details">
-        <pre>java.lang.NullPointerException
-	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy16.click(Unknown Source)
-	at pages.hotelManagementPage.DeleteEntry(hotelManagementPage.java:57)
-	at steps.HotelManagementSteps.clickShouldBeAbleToDeleteMultipleEntrie(HotelManagementSteps.java:66)
-	at ✽.And click should be able to delete multiple entrie(feature/HotelManagement.feature:44)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
         

@@ -1,13 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: steps.RunnerTest
 -------------------------------------------------------------------------------
-Tests run: 54, Failures: 0, Errors: 3, Skipped: 9, Time elapsed: 60.833 sec <<< FAILURE! - in steps.RunnerTest
-| Hilton Hotel | London UK | George | 07909000943 | test@email.com |  Time elapsed: 0.125 sec  <<< ERROR!
-java.lang.NullPointerException
-
-And click should be able to delete multiple entrie(Scenario: I should be able o delete existing entries)  Time elapsed: 0 sec  <<< ERROR!
-java.lang.NullPointerException
-
-Scenario: I should be able o delete existing entries  Time elapsed: 0 sec  <<< ERROR!
-java.lang.NullPointerException
-
+Tests run: 54, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 62.788 sec - in steps.RunnerTest

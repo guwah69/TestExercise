@@ -1,6 +1,4 @@
-steps\Common.class
+steps\LoginSteps.class
 pages\LoginPage.class
-steps\Login.class
-pages\RegisterPage.class
+steps\CommonSteps.class
 steps\RunnerTest.class
-steps\Register.class

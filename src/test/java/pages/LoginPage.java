@@ -4,8 +4,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
-//import static pages.RegisterPage.myemail;
-
 public class LoginPage {
 
 

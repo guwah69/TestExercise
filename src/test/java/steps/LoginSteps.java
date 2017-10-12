@@ -10,7 +10,7 @@ import pages.LoginPage;
 import java.io.IOException;
 import static org.junit.Assert.assertTrue;
 
-public class Login extends testBase {
+public class LoginSteps extends testBase {
 
     @Before
     public void setup() throws IOException {
@@ -46,7 +46,6 @@ public class Login extends testBase {
         signinpage.click_loginOutBtn();
         Thread.sleep(3000);
         return signinpage.lnkLogin.isDisplayed();
-//
     }
 
     @When("^I log in to the platform$")
