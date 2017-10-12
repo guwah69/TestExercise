@@ -50,12 +50,14 @@ public class HotelManagementSteps extends testBase {
     public void iEnterInTeEmailField(String email) throws Throwable {
         hotelManagementPage hotelPage = PageFactory.initElements(driver, hotelManagementPage.class);
         hotelPage.enterEmail(email);
+        Thread.sleep(1000);
     }
 
     @And("^I click create button$")
     public void iClickCreateButton() throws Throwable {
         hotelManagementPage hotelPage = PageFactory.initElements(driver, hotelManagementPage.class);
         hotelPage.clickCreateBtn();
+        Thread.sleep(1000);
     }
 
     @And("^click should be able to delete multiple entrie$")

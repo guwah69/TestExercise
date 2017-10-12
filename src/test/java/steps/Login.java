@@ -44,8 +44,9 @@ public class Login extends testBase {
     public boolean i_log_out_successfully() throws Throwable {
         LoginPage signinpage = PageFactory.initElements(driver, LoginPage.class);
         signinpage.click_loginOutBtn();
+        Thread.sleep(3000);
         return signinpage.lnkLogin.isDisplayed();
-//        Thread.sleep(1000);
+//
     }
 
     @When("^I log in to the platform$")

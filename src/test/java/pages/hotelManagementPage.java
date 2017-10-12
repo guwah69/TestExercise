@@ -53,7 +53,7 @@ public class hotelManagementPage {
     }
 
     public void DeleteEntry() throws InterruptedException {
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 5; i++) {
             btnDelete.click();
             Thread.sleep(2000);
 
