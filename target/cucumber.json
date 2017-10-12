@@ -1,0 +1,927 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3745284482,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on the Homepage",
+            "match": {
+              "location": "Common.i_am_on_the_Homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 672534236,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I log in to the platform",
+            "match": {
+              "location": "Login.iLogInToThePlatform()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4051488989,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Common.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 216736,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HotelManagementSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 154552,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login.setup()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "I want to create and delete entries",
+        "description": "",
+        "id": "as-an-admin-user-i-want-to-create-a-single-and-multiple-entry-and-delete-all-entry-test;i-want-to-create-and-delete-entries;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 990459994,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I enter \"Hilton Hotel\" in the hotel name field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Hilton Hotel",
+                  "offset": 9
+                }
+              ],
+              "location": "HotelManagementSteps.iEnterHotelNameInTheHotelNameField(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 180733679,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I enter  \"London UK\" in the address field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "London UK",
+                  "offset": 10
+                }
+              ],
+              "location": "HotelManagementSteps.iEnterInTheAddressField(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 153842718,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I enter \"George\" in the owners field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "George",
+                  "offset": 9
+                }
+              ],
+              "location": "HotelManagementSteps.iEnterInTheOwnersField(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 236259752,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I enter \"07909000943\" in the phone number field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "07909000943",
+                  "offset": 9
+                }
+              ],
+              "location": "HotelManagementSteps.iEnterInThePhoneNumberField(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 238282823,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I enter \"test@email.com\" in the email field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test@email.com",
+                  "offset": 9
+                }
+              ],
+              "location": "HotelManagementSteps.iEnterInTeEmailField(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1125361555,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I click create button",
+            "match": {
+              "location": "HotelManagementSteps.iClickCreateButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 258453761,
+              "error_message": "org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document\n  (Session info: chrome\u003d61.0.3163.100)\n  (Driver info: chromedriver\u003d2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform\u003dWindows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 79 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html\nBuild info: version: \u00273.0.1\u0027, revision: \u00271969d75\u0027, time: \u00272016-10-18 09:49:13 -0700\u0027\nSystem info: host: \u0027KG_PC\u0027, ip: \u0027169.254.218.129\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_91\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, mobileEmulationEnabled\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir\u003dC:\\Users\\NINO\\AppData\\Local\\Temp\\scoped_dir3116_25431}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, hasTouchScreen\u003dfalse, version\u003d61.0.3163.100, platform\u003dXP, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, acceptSslCerts\u003dtrue, locationContextEnabled\u003dtrue, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d}]\nSession ID: 6853fd911ff44016b55a20b37311fcc3\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy16.click(Unknown Source)\r\n\tat pages.LoginPage.click_loginOutBtn(LoginPage.java:37)\r\n\tat steps.Login.i_log_out_successfully(Login.java:46)\r\n\tat ✽.And I log out successfully(feature/HotelManagement.feature:17)\r\n",
+              "status": "failed"
+            },
+            "line": 17,
+            "name": "I log out successfully",
+            "match": {
+              "location": "Login.i_log_out_successfully()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@hotelManagementTest"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1143205145,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on the Homepage",
+            "match": {
+              "location": "Common.i_am_on_the_Homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 30054444205,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"link text\",\"selector\":\"Login\"}\n  (Session info: chrome\u003d61.0.3163.100)\n  (Driver info: chromedriver\u003d2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform\u003dWindows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 30.01 seconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.0.1\u0027, revision: \u00271969d75\u0027, time: \u00272016-10-18 09:49:13 -0700\u0027\nSystem info: host: \u0027KG_PC\u0027, ip: \u0027169.254.218.129\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_91\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, mobileEmulationEnabled\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir\u003dC:\\Users\\NINO\\AppData\\Local\\Temp\\scoped_dir3116_25431}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, hasTouchScreen\u003dfalse, version\u003d61.0.3163.100, platform\u003dXP, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, acceptSslCerts\u003dtrue, locationContextEnabled\u003dtrue, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d}]\nSession ID: 6853fd911ff44016b55a20b37311fcc3\n*** Element info: {Using\u003dlink text, value\u003dLogin}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:425)\r\n\tat org.openqa.selenium.By$ByLinkText.findElement(By.java:246)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy16.click(Unknown Source)\r\n\tat pages.LoginPage.Login(LoginPage.java:45)\r\n\tat steps.Login.iLogInToThePlatform(Login.java:54)\r\n\tat ✽.When I log in to the platform(feature/HotelManagement.feature:6)\r\n",
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "I log in to the platform",
+            "match": {
+              "location": "Login.iLogInToThePlatform()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 104444,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Common.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 78484,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HotelManagementSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 77880,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login.setup()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "I want to create and delete entries",
+        "description": "",
+        "id": "as-an-admin-user-i-want-to-create-a-single-and-multiple-entry-and-delete-all-entry-test;i-want-to-create-and-delete-entries;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "I enter \"Hilton Hotel\" in the hotel name field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Hilton Hotel",
+                  "offset": 9
+                }
+              ],
+              "location": "HotelManagementSteps.iEnterHotelNameInTheHotelNameField(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "I enter  \"London UK\" in the address field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "London UK",
+                  "offset": 10
+                }
+              ],
+              "location": "HotelManagementSteps.iEnterInTheAddressField(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "I enter \"George\" in the owners field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "George",
+                  "offset": 9
+                }
+              ],
+              "location": "HotelManagementSteps.iEnterInTheOwnersField(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "I enter \"07909000943\" in the phone number field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "07909000943",
+                  "offset": 9
+                }
+              ],
+              "location": "HotelManagementSteps.iEnterInThePhoneNumberField(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "I enter \"test@email.com\" in the email field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test@email.com",
+                  "offset": 9
+                }
+              ],
+              "location": "HotelManagementSteps.iEnterInTeEmailField(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "I click create button",
+            "match": {
+              "location": "HotelManagementSteps.iClickCreateButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "I log out successfully",
+            "match": {
+              "location": "Login.i_log_out_successfully()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@hotelManagementTest"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1222720695,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on the Homepage",
+            "match": {
+              "location": "Common.i_am_on_the_Homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 30042681900,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"link text\",\"selector\":\"Login\"}\n  (Session info: chrome\u003d61.0.3163.100)\n  (Driver info: chromedriver\u003d2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform\u003dWindows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 30.04 seconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.0.1\u0027, revision: \u00271969d75\u0027, time: \u00272016-10-18 09:49:13 -0700\u0027\nSystem info: host: \u0027KG_PC\u0027, ip: \u0027169.254.218.129\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_91\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, mobileEmulationEnabled\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir\u003dC:\\Users\\NINO\\AppData\\Local\\Temp\\scoped_dir3116_25431}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, hasTouchScreen\u003dfalse, version\u003d61.0.3163.100, platform\u003dXP, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, acceptSslCerts\u003dtrue, locationContextEnabled\u003dtrue, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d}]\nSession ID: 6853fd911ff44016b55a20b37311fcc3\n*** Element info: {Using\u003dlink text, value\u003dLogin}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:425)\r\n\tat org.openqa.selenium.By$ByLinkText.findElement(By.java:246)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy16.click(Unknown Source)\r\n\tat pages.LoginPage.Login(LoginPage.java:45)\r\n\tat steps.Login.iLogInToThePlatform(Login.java:54)\r\n\tat ✽.When I log in to the platform(feature/HotelManagement.feature:6)\r\n",
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "I log in to the platform",
+            "match": {
+              "location": "Login.iLogInToThePlatform()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 92369,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Common.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 91766,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HotelManagementSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 102029,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login.setup()"
+            }
+          }
+        ],
+        "line": 37,
+        "name": "I want to create and delete entries",
+        "description": "",
+        "id": "as-an-admin-user-i-want-to-create-a-single-and-multiple-entry-and-delete-all-entry-test;i-want-to-create-and-delete-entries;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "I enter \"Hilton Hotel2\" in the hotel name field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Hilton Hotel2",
+                  "offset": 9
+                }
+              ],
+              "location": "HotelManagementSteps.iEnterHotelNameInTheHotelNameField(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "I enter  \"London UK\" in the address field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "London UK",
+                  "offset": 10
+                }
+              ],
+              "location": "HotelManagementSteps.iEnterInTheAddressField(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "I enter \"George\" in the owners field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "George",
+                  "offset": 9
+                }
+              ],
+              "location": "HotelManagementSteps.iEnterInTheOwnersField(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "I enter \"07909000943\" in the phone number field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "07909000943",
+                  "offset": 9
+                }
+              ],
+              "location": "HotelManagementSteps.iEnterInThePhoneNumberField(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "I enter \"test@email.com\" in the email field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test@email.com",
+                  "offset": 9
+                }
+              ],
+              "location": "HotelManagementSteps.iEnterInTeEmailField(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "I click create button",
+            "match": {
+              "location": "HotelManagementSteps.iClickCreateButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "I log out successfully",
+            "match": {
+              "location": "Login.i_log_out_successfully()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@hotelManagementTest"
+          },
+          {
+            "line": 25,
+            "name": "@createMultipleEntries"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1212023957,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on the Homepage",
+            "match": {
+              "location": "Common.i_am_on_the_Homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 30015528319,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"link text\",\"selector\":\"Login\"}\n  (Session info: chrome\u003d61.0.3163.100)\n  (Driver info: chromedriver\u003d2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform\u003dWindows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 30.00 seconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.0.1\u0027, revision: \u00271969d75\u0027, time: \u00272016-10-18 09:49:13 -0700\u0027\nSystem info: host: \u0027KG_PC\u0027, ip: \u0027169.254.218.129\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_91\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, mobileEmulationEnabled\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir\u003dC:\\Users\\NINO\\AppData\\Local\\Temp\\scoped_dir3116_25431}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, hasTouchScreen\u003dfalse, version\u003d61.0.3163.100, platform\u003dXP, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, acceptSslCerts\u003dtrue, locationContextEnabled\u003dtrue, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d}]\nSession ID: 6853fd911ff44016b55a20b37311fcc3\n*** Element info: {Using\u003dlink text, value\u003dLogin}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:425)\r\n\tat org.openqa.selenium.By$ByLinkText.findElement(By.java:246)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy16.click(Unknown Source)\r\n\tat pages.LoginPage.Login(LoginPage.java:45)\r\n\tat steps.Login.iLogInToThePlatform(Login.java:54)\r\n\tat ✽.When I log in to the platform(feature/HotelManagement.feature:6)\r\n",
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "I log in to the platform",
+            "match": {
+              "location": "Login.iLogInToThePlatform()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 88144,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Common.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 102029,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HotelManagementSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 184738,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login.setup()"
+            }
+          }
+        ],
+        "line": 38,
+        "name": "I want to create and delete entries",
+        "description": "",
+        "id": "as-an-admin-user-i-want-to-create-a-single-and-multiple-entry-and-delete-all-entry-test;i-want-to-create-and-delete-entries;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "I enter \"Sheraton Hotel\" in the hotel name field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sheraton Hotel",
+                  "offset": 9
+                }
+              ],
+              "location": "HotelManagementSteps.iEnterHotelNameInTheHotelNameField(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "I enter  \"Kent UK\" in the address field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Kent UK",
+                  "offset": 10
+                }
+              ],
+              "location": "HotelManagementSteps.iEnterInTheAddressField(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "I enter \"Tester\" in the owners field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Tester",
+                  "offset": 9
+                }
+              ],
+              "location": "HotelManagementSteps.iEnterInTheOwnersField(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "I enter \"07909090009\" in the phone number field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "07909090009",
+                  "offset": 9
+                }
+              ],
+              "location": "HotelManagementSteps.iEnterInThePhoneNumberField(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "I enter \"ester@email.com\" in the email field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ester@email.com",
+                  "offset": 9
+                }
+              ],
+              "location": "HotelManagementSteps.iEnterInTeEmailField(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "I click create button",
+            "match": {
+              "location": "HotelManagementSteps.iClickCreateButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "I log out successfully",
+            "match": {
+              "location": "Login.i_log_out_successfully()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@hotelManagementTest"
+          },
+          {
+            "line": 25,
+            "name": "@createMultipleEntries"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1205679449,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on the Homepage",
+            "match": {
+              "location": "Common.i_am_on_the_Homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 30062842575,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"link text\",\"selector\":\"Login\"}\n  (Session info: chrome\u003d61.0.3163.100)\n  (Driver info: chromedriver\u003d2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform\u003dWindows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 30.05 seconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.0.1\u0027, revision: \u00271969d75\u0027, time: \u00272016-10-18 09:49:13 -0700\u0027\nSystem info: host: \u0027KG_PC\u0027, ip: \u0027169.254.218.129\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_91\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, mobileEmulationEnabled\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir\u003dC:\\Users\\NINO\\AppData\\Local\\Temp\\scoped_dir3116_25431}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, hasTouchScreen\u003dfalse, version\u003d61.0.3163.100, platform\u003dXP, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, acceptSslCerts\u003dtrue, locationContextEnabled\u003dtrue, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d}]\nSession ID: 6853fd911ff44016b55a20b37311fcc3\n*** Element info: {Using\u003dlink text, value\u003dLogin}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:425)\r\n\tat org.openqa.selenium.By$ByLinkText.findElement(By.java:246)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy16.click(Unknown Source)\r\n\tat pages.LoginPage.Login(LoginPage.java:45)\r\n\tat steps.Login.iLogInToThePlatform(Login.java:54)\r\n\tat ✽.When I log in to the platform(feature/HotelManagement.feature:6)\r\n",
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "I log in to the platform",
+            "match": {
+              "location": "Login.iLogInToThePlatform()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 82710,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Common.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 99614,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HotelManagementSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 63391,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login.setup()"
+            }
+          }
+        ],
+        "line": 42,
+        "name": "I should be able o delete existing entries",
+        "description": "",
+        "id": "as-an-admin-user-i-want-to-create-a-single-and-multiple-entry-and-delete-all-entry-test;i-should-be-able-o-delete-existing-entries",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 43,
+            "name": "click should be able to delete multiple entrie",
+            "match": {
+              "location": "HotelManagementSteps.clickShouldBeAbleToDeleteMultipleEntrie()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 41,
+            "name": "@deleteEntries"
+          }
+        ]
+      }
+    ],
+    "name": "As an admin User I want to create a single and Multiple Entry and delete all entry test",
+    "description": "",
+    "id": "as-an-admin-user-i-want-to-create-a-single-and-multiple-entry-and-delete-all-entry-test",
+    "keyword": "Feature",
+    "uri": "feature/HotelManagement.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@hotelManagementTest"
+      }
+    ]
+  }
+]
