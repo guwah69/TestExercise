@@ -30,17 +30,17 @@ public class testBase {
 
             //Initialize the webdriver
             if (CONFIG.getProperty("browser").equals("firefox")){
-                System.setProperty("webdriver.gecko.driver", "C:\\WorkSpace\\geckodriver.exe");
+                System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\geckodriver.exe");
                 driver = new FirefoxDriver();
 
             }else if(CONFIG.getProperty("browser").equals("IE")){
-                System.setProperty("webdriver.chrome.driver", "C:\\IEDriverServer.exe");
+                System.setProperty("webdriver.ie.driver", System.getProperty("user.dir") + "\\IEDriverServer.exe");
                 driver = new InternetExplorerDriver();
 
             }
 
             else if(CONFIG.getProperty("browser").equals("chrome")){
-                System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\chromedriver.exe");
                 driver = new ChromeDriver();
             }
 
