@@ -2,6 +2,9 @@
 - Clone project to your local 
 - cd in the project
 - To run test: run mvn clean, mvn compile and mvn test.
+- Generate Report: Go to Target folder=> Site=> and run report it shuld look like this:
+![testreport](https://user-images.githubusercontent.com/14157404/31548241-1ebc7e68-b022-11e7-8ce3-10437c13de4f.PNG)
+
 
 
 #Solution Explained
