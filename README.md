@@ -1,4 +1,4 @@
-#Setting Up Framework
+# Setting Up Framework
 - Clone project to your local 
 - cd in the project
 - To run test: run mvn clean, mvn compile and mvn test.
@@ -7,7 +7,7 @@
 
 
 
-#Solution Explained
+# Solution Explained
 I have setup the solution following a Page Object Model Pattern and BDD approach
 
 The main reason I have setup this solution is to follow the Page Object Model Pattern, because POM will help with the following:
